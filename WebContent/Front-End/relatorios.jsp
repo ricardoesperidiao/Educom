@@ -5,8 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<link rel="shortcut icon" href="6765educom.ico" type="image/x-icon"/>
-        <link rel=stylesheet type="text/css" href="/Educom/WeContent/Front-End/relatorios.css">  
+        <link rel="stylesheet" href="relatorios.css"/>
         <title>EDUCOM - Relatórios</title>
+        
+        
+        
 </head>
 <body>
 
