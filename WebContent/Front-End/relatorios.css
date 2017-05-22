@@ -1,0 +1,172 @@
+@CHARSET "ISO-8859-1";
+
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+    src: url(Roboto-Bold.ttf);
+}
+head{
+     font-family: 'Roboto', sans-serif;
+    src: url(Roboto-Bold.ttf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+     font-family: 'Roboto', sans-serif;
+    src: url(Roboto-Bold.ttf);
+    background-color: black;
+    background-image: url(blank-chalkboard-wallpaper.jpg);
+    background-attachment: fixed;
+}
+
+#oi{
+    background-color: blue;
+    width: 100%;
+    height: 1%;
+    border: none;
+    margin: 0px;
+}
+
+.central
+{
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    background-color: aqua;
+    border-radius: 0px 15px 15px 15px;
+    background-color: white;
+}
+
+.cabecalho{
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top:-10%;
+    left: -5%;
+    background-color: green;
+    border-radius: 5px;
+    background-color: 	#2E8B57;
+    font-size: 20px;
+    color: white;
+}
+
+.h2{
+    position: absolute;
+    left: 25%;
+    top: -30%;
+}
+
+.campo1
+{
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+.campo2
+{
+    position: absolute;
+    float: right;
+    left: 37%;
+    bottom: 85.5%;
+    top: 10%;
+}
+
+.campo3
+{
+    position: absolute;
+    float: right;
+    left: 67%;
+    bottom: 85.5%;
+    top: 10%;
+}
+
+.campo4
+{
+    position: absolute;
+    bottom: 85.5%;
+    top: 40%;
+    left: 7%;
+    
+}
+
+.campo5
+{
+    position: absolute;
+    float: right;
+    left: 37%;
+    bottom: 85.5%;
+    top: 40%;
+    
+}
+
+.btne
+{
+    position: absolute;
+    left: 71%;
+    top: 55%;
+    
+}
+
+.btnc
+{
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #4D4DFF;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.btnc:active{
+    background-color: #1E90FF;
+}
+
+.btnexe{
+    position: absolute;
+    border: none;
+    width: 120px;
+    height: 30px;
+    left: 30%;
+    top: 80%;
+    background-color: #008000;
+    border-radius: 6px;
+    color: white;
+}
+
+.btnexe:active{
+    background-color: #228B22;
+    
+}
+
+.btnpdf
+{
+    position: absolute;
+    border: none;
+    width: 120px;
+    height: 30px;
+    top: 80%;
+    left: 50%;
+    background-color: #B22222;
+    border-radius: 6px;
+    color: white;
+}
+
+.btnpdf:active{
+    background-color: #8B0000;
+    
+}
+
+.texto{
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #E6E6FA;
+    font-size: 18px;
+    color: #191970;
+}

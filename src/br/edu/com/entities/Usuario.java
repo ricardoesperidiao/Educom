@@ -4,7 +4,6 @@ public class Usuario {
 	
 	private String email;
 	private String senha;
-	private String cpf;
 	
 	public String getEmail() {
 		return email;
@@ -22,12 +21,5 @@ public class Usuario {
 		this.senha = senha;
 	}
 	
-	public String getCpf() {
-		return cpf;
-	}
 	
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
 }

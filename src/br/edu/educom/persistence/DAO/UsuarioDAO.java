@@ -26,7 +26,7 @@ private Connection connection;
 	
 	public void adicionar(Usuario usuario) {
 		
-		String sql = "INSERT INTO usuario ( email, senha, cpf ) Values (?,?,?)";
+		String sql = "INSERT INTO usuario ( email, senha) Values (?,?)";
 		
 		try {
 			
@@ -34,7 +34,7 @@ private Connection connection;
 			
 			stmt.setString(1, usuario.getEmail());
 			stmt.setString(2, usuario.getSenha());
-			stmt.setString(3, usuario.getCpf());	
+			
 			
 			stmt.execute(); //stmt.executeUpdate(); ?
 			stmt.close();
@@ -56,7 +56,6 @@ private Connection connection;
 			Usuario user = new Usuario();
 			user.setEmail(rs.getString("email"));
 			user.setSenha(rs.getString("senha"));
-			user.setCpf(rs.getString("cpf"));
 			usuarios.add(user);
 		}
 		rs.close();
@@ -66,13 +65,13 @@ private Connection connection;
 	
 	public void alterar(Usuario usuario) {
 		
-		String sql = "UPDATE usuario SET email=?, cpf=?, senha=? where email=?";
+		String sql = "UPDATE usuario SET email=?,senha=? where email=?";
 		
 		try {
 			
 			PreparedStatement stmt = connection.prepareStatement(sql);
 			stmt.setString(1, usuario.getEmail());
-			stmt.setString(2, usuario.getCpf());
+			
 			stmt.setString(3, usuario.getSenha());
 			
 			stmt.execute();
