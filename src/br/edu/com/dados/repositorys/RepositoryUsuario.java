@@ -1,9 +1,9 @@
-package br.edu.com.repositorys;
+package br.edu.com.dados.repositorys;
 
 import java.util.List;
 
+import br.edu.com.dados.dao.Dao;
 import br.edu.com.entities.Usuario;
-import br.edu.educom.persistence.DAO.Dao;
 
 public class RepositoryUsuario implements IRepositoryUsuario{
 

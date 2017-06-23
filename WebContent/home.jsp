@@ -10,6 +10,10 @@
 </head>
 <body>
 
+<h1>
+	${msg}
+</h1>
+
 <div class="barraMenu">
         
         <a href="CadastroAtividade.html"><input type="button" value="Cadastro Atividade" class="buttonAtividade"></a>

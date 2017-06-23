@@ -1,11 +1,11 @@
-package br.edu.educom.tests;
+package br.edu.educom.util;
 
 
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 
+import br.edu.com.controller.Facade;
 import br.edu.com.entities.Usuario;
-import br.edu.com.facade.Facade;
 
 public class GeradorBanco {
 	
@@ -24,7 +24,7 @@ public class GeradorBanco {
 			user.setEmail("joao.p.lira@gmail.com");
 			user.setSenha("123@mudar");
 			
-			Facade.getInstance().salvarUsuario(user);
+			Facade.getInstance().getUsuario().salvarUsuario(user);
 			
 //			Administrador admPadao = new Administrador();
 //			admPadao.setEmail("administrador@gmail.com");

@@ -1,4 +1,4 @@
-package br.edu.com.repositorys;
+package br.edu.com.dados.repositorys;
 
 import java.util.List;
 

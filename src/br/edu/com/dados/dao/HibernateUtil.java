@@ -1,4 +1,4 @@
-package br.edu.educom.persistence.DAO;
+package br.edu.com.dados.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
