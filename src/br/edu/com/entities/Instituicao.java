@@ -1,7 +1,15 @@
 package br.edu.com.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Instituicao {
-	
+
+	@Id
+	@GeneratedValue
+	private Long id;
 	private String nome;
 	private String sigla;
 	
@@ -24,6 +32,14 @@ public class Instituicao {
 	@Override
 	public String toString() {
 		return "Instituicao [nome=" + nome + ", sigla=" + sigla + "]";
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	

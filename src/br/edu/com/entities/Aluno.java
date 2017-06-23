@@ -1,9 +1,23 @@
 package br.edu.com.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+@Entity
 public class Aluno {
 	
+	@Id
+	@GeneratedValue
+	private Long id;
 	private String nome;
+	@OneToOne
+	@JoinColumn(name = "idInstituicao")
 	private Instituicao instituicao;
+	@OneToOne
+	@JoinColumn(name = "idTurma")
 	private Turma turma;
 	
 	
@@ -25,5 +39,12 @@ public class Aluno {
 	public void setTurma(Turma turma) {
 		this.turma = turma;
 	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
 
 }
