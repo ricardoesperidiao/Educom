@@ -4,9 +4,6 @@ package br.edu.educom.util;
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 
-import br.edu.com.controller.Facade;
-import br.edu.com.entities.Usuario;
-
 public class GeradorBanco {
 	
 	public static void main(String[] args) {
@@ -20,21 +17,19 @@ public class GeradorBanco {
 			System.out.println("BANCO GERADO COM SUCESSO!");
 			
 			
-<<<<<<< HEAD
 //			Usuario user  = new Usuario();
 //			user.setEmail("ricardoesperidiao@gmail.com");
 //			user.setSenha("123@mudar");
 //			
 //			Facade.getInstance().getUsuario().salvarUsuario(user);
-=======
-			Usuario user  = new Usuario();
-			user.setEmail("joao.p.lira@gmail.com");
-			user.setNome("João Paulo");
-			user.setSenha("123@mudar");
 			
+//			Usuario user  = new Usuario();
+//			user.setEmail("joao.p.lira@gmail.com");
+//			user.setNome("João Paulo");
+//			user.setSenha("123@mudar");
+//			
 			
-			Facade.getInstance().getUsuario().salvarUsuario(user);
->>>>>>> branch 'master' of https://github.com/ricardoesperidiao/Educom.git
+//			Facade.getInstance().getUsuario().salvarUsuario(user);
 			
 //			Administrador admPadao = new Administrador();
 //			admPadao.setEmail("administrador@gmail.com");

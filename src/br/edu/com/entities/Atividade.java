@@ -1,12 +1,12 @@
 package br.edu.com.entities;
 
-import javax.persistence.*;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+@Entity
 public class Atividade {
 
 	@Id
@@ -17,7 +17,6 @@ public class Atividade {
 	private String Descricao;
 	
 	@ManyToOne
-	@JoinColumn(name="idDisciplina")
 	private Disciplina disciplina;
 
 	public long getId() {
@@ -43,8 +42,6 @@ public class Atividade {
 	public void setDisciplina(Disciplina disciplina) {
 		this.disciplina = disciplina;
 	}
-	
-	
-	
+
 	
 }

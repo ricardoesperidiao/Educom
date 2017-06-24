@@ -2,11 +2,12 @@ package br.edu.com.entities;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
@@ -22,45 +23,53 @@ public class Turma {
 	private String nome;
 	
 	@ManyToOne
-	@JoinColumn(name="idInstituicao")
 	private Instituicao instituicao;
 	
-	@OneToMany
-	private List<Disciplina> disciplina;
+	@OneToMany(mappedBy="turma", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.EAGER)
+	private List<Disciplina> disciplinas;
 	
-	
-	public List<Disciplina> getDisciplina() {
-		return disciplina;
-	}
-	
-	public void setDisciplina(List<Disciplina> disciplina) {
-		this.disciplina = disciplina;
-	}
-	
-	public String getNome() {
-		return nome;
-	}
-	
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	
-	public Instituicao getInstituicao() {
-		return instituicao;
-	}
-	
-	public void setInstituicao(Instituicao instituicao) {
-		this.instituicao = instituicao;
-	}
-	
+	@OneToMany(mappedBy="turma", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.EAGER)
+	private List<Aluno> alunos;
+
 	public Long getId() {
 		return id;
 	}
-	
+
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Instituicao getInstituicao() {
+		return instituicao;
+	}
+
+	public void setInstituicao(Instituicao instituicao) {
+		this.instituicao = instituicao;
+	}
+
+	public List<Disciplina> getDisciplinas() {
+		return disciplinas;
+	}
+
+	public void setDisciplinas(List<Disciplina> disciplinas) {
+		this.disciplinas = disciplinas;
+	}
+
+	public List<Aluno> getAlunos() {
+		return alunos;
+	}
+
+	public void setAlunos(List<Aluno> alunos) {
+		this.alunos = alunos;
+	}
 	
 
 }

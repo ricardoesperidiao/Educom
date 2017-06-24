@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.edu.com.controller.Facade;
 import br.edu.com.controller.ILogica;
-import br.edu.com.entities.Usuario;
+import br.edu.com.entities.Professor;
 
 public class Rd implements ILogica{
 
@@ -21,7 +21,7 @@ public class Rd implements ILogica{
 		
 		if(acao.equals("visualizarUsuarios")){
 			
-			 List<Usuario> listUsuarios = Facade.getInstance().getUsuario().listarUsuarios();
+			 List<Professor> listUsuarios = Facade.getInstance().getUsuario().listarUsuarios();
 			 
 //			 com.github.jlinqer.collections.List<Usuario> t = new com.github.jlinqer.collections.List<>();
 //			 t.addAll(listUsuarios);

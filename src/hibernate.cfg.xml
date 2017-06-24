@@ -25,8 +25,10 @@
 		<mapping class="br.edu.com.entities.Atividade" />
 		<mapping class="br.edu.com.entities.Disciplina" />
 		<mapping class="br.edu.com.entities.Instituicao" />
+		<mapping class="br.edu.com.entities.Instituicao" />
 		<mapping class="br.edu.com.entities.Turma" />
-		<mapping class="br.edu.com.entities.Usuario" />
+		<mapping class="br.edu.com.entities.Professor" />
+		<mapping class="br.edu.com.entities.UsuarioLogin" />
 		
 		
 
