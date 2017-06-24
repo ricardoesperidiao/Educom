@@ -20,11 +20,21 @@ public class GeradorBanco {
 			System.out.println("BANCO GERADO COM SUCESSO!");
 			
 			
+<<<<<<< HEAD
 //			Usuario user  = new Usuario();
 //			user.setEmail("ricardoesperidiao@gmail.com");
 //			user.setSenha("123@mudar");
 //			
 //			Facade.getInstance().getUsuario().salvarUsuario(user);
+=======
+			Usuario user  = new Usuario();
+			user.setEmail("joao.p.lira@gmail.com");
+			user.setNome("João Paulo");
+			user.setSenha("123@mudar");
+			
+			
+			Facade.getInstance().getUsuario().salvarUsuario(user);
+>>>>>>> branch 'master' of https://github.com/ricardoesperidiao/Educom.git
 			
 //			Administrador admPadao = new Administrador();
 //			admPadao.setEmail("administrador@gmail.com");

@@ -1,12 +1,12 @@
 package br.edu.com.dados.dao;
 
+
 import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 
 
 public class Dao {
