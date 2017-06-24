@@ -20,11 +20,11 @@ public class GeradorBanco {
 			System.out.println("BANCO GERADO COM SUCESSO!");
 			
 			
-			Usuario user  = new Usuario();
-			user.setEmail("joao.p.lira@gmail.com");
-			user.setSenha("123@mudar");
-			
-			Facade.getInstance().getUsuario().salvarUsuario(user);
+//			Usuario user  = new Usuario();
+//			user.setEmail("ricardoesperidiao@gmail.com");
+//			user.setSenha("123@mudar");
+//			
+//			Facade.getInstance().getUsuario().salvarUsuario(user);
 			
 //			Administrador admPadao = new Administrador();
 //			admPadao.setEmail("administrador@gmail.com");
@@ -39,7 +39,7 @@ public class GeradorBanco {
 			
 		}catch(Exception e){
 			e.printStackTrace();
-			System.out.println("BANCO NÃO FOI GERADO COM SUCESSO!");
+			System.out.println("BANCO NÃO FOI GERADO!");
 
 		}
 		

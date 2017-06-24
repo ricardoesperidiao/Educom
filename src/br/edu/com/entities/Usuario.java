@@ -1,9 +1,14 @@
 package br.edu.com.entities;
 
+import javax.persistence.*;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Usuario {
@@ -13,6 +18,10 @@ public class Usuario {
 	private Long id;
 	@Column(nullable = false)
 	private String nome;
+	
+	@OneToMany
+	private List<Instituicao> instituicao;
+	
 	private String email;
 	private String senha;
 	

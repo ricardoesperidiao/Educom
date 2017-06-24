@@ -1,5 +1,6 @@
 package br.edu.com.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,10 +13,14 @@ public class Aluno {
 	@Id
 	@GeneratedValue
 	private Long id;
+	
+	@Column(nullable = false)
 	private String nome;
+	
 	@OneToOne
 	@JoinColumn(name = "idInstituicao")
 	private Instituicao instituicao;
+	
 	@OneToOne
 	@JoinColumn(name = "idTurma")
 	private Turma turma;

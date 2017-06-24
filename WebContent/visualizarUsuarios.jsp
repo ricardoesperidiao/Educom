@@ -9,8 +9,9 @@
 </head>
 <body>
 
-<table>
+ <table>
 	 <c:forEach var="usuario" items="${listaUsuarios}">
+	
 	 	 <tr style="background-color: #CCCCCC"; height="200px;" id="bordar">
 	           <td colspan="0">
 	           		${usuario.id}
