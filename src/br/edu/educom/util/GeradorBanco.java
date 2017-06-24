@@ -4,6 +4,10 @@ package br.edu.educom.util;
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 
+import br.edu.com.controller.Facade;
+import br.edu.com.entities.Professor;
+import br.edu.com.entities.UsuarioLogin;
+
 public class GeradorBanco {
 	
 	public static void main(String[] args) {
@@ -16,12 +20,12 @@ public class GeradorBanco {
 			schemaExport.create(true, true);
 			System.out.println("BANCO GERADO COM SUCESSO!");
 			
+			UsuarioLogin user  = new UsuarioLogin();
+			user.setEmail("ricardoesperidiao@gmail.com");
+			user.setSenha("123@mudar");
+			user.setNome("teste");
 			
-//			Usuario user  = new Usuario();
-//			user.setEmail("ricardoesperidiao@gmail.com");
-//			user.setSenha("123@mudar");
-//			
-//			Facade.getInstance().getUsuario().salvarUsuario(user);
+			Facade.getInstance().getIUsuarioLogin().salvarUsuarioLogin(user);
 			
 //			Usuario user  = new Usuario();
 //			user.setEmail("joao.p.lira@gmail.com");

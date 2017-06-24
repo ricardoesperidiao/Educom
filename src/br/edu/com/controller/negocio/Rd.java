@@ -21,12 +21,12 @@ public class Rd implements ILogica{
 		
 		if(acao.equals("visualizarUsuarios")){
 			
-			 List<Professor> listUsuarios = Facade.getInstance().getUsuario().listarUsuarios();
+			 //List<Professor> listUsuarios = Facade.getInstance().getIUsuarioLogin().listarUsuarioLogin();
 			 
 //			 com.github.jlinqer.collections.List<Usuario> t = new com.github.jlinqer.collections.List<>();
 //			 t.addAll(listUsuarios);
 			 
-			 request.setAttribute("listaUsuarios", listUsuarios);
+			// request.setAttribute("listaUsuarios", listUsuarios);
 			 request.getRequestDispatcher("visualizarUsuarios.jsp").forward(request, response);
 		}
 		

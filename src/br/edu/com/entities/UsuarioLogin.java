@@ -1,8 +1,6 @@
 package br.edu.com.entities;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -18,8 +16,8 @@ public class UsuarioLogin {
 	private String email;
 	private String senha;
 	
-	@OneToOne(fetch = FetchType.EAGER, mappedBy="usuarioLogin", optional = true)
-	private Professor professor;
+	@OneToOne
+	private Professor professor ;
 
 	public Long getId() {
 		return Id;

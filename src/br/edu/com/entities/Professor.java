@@ -1,9 +1,9 @@
 package br.edu.com.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -17,15 +17,13 @@ public class Professor {
 	@Id	
 	@GeneratedValue
 	private Long id;
-	@Column(nullable = false)
-	
 	private String nome;
 	
-	@OneToOne
+	 @OneToOne
 	private UsuarioLogin usuarioLogin;
 	
 	@OneToMany(mappedBy="professor", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.EAGER)
-	private List<Instituicao> instituicao;
+	private List<Instituicao> instituicao = new ArrayList<>();
 
 	public Long getId() {
 		return id;

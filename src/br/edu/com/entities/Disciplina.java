@@ -1,9 +1,9 @@
 package br.edu.com.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -16,13 +16,11 @@ public class Disciplina {
 	
 	@Id
 	@GeneratedValue
-	private long id;
-	
-	@Column(nullable = false)
+	private Long id;
 	private String descricao;
 	
 	@OneToMany(mappedBy="disciplina", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.EAGER)
-	private List<Atividade> atividade;
+	private List<Atividade> atividade = new ArrayList<>();
 	
 	@ManyToOne
 	private Turma turma;

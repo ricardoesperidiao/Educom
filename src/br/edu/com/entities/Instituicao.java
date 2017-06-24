@@ -1,9 +1,9 @@
 package br.edu.com.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -17,16 +17,14 @@ public class Instituicao {
 	@Id
 	@GeneratedValue
 	private Long id;
-	
-	@Column(nullable = false)
 	private String nome;
 	private String sigla;
 	
 	@ManyToOne
 	private Professor professor;
 	
-	@OneToMany(mappedBy="instituicao", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.EAGER)
-	private List<Turma> turma;
+	@OneToMany(mappedBy="instituicao", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.LAZY)
+	private List<Turma> turma = new ArrayList<>();
 
 	public Long getId() {
 		return id;

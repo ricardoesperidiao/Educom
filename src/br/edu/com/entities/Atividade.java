@@ -1,6 +1,5 @@
 package br.edu.com.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,9 +10,8 @@ public class Atividade {
 
 	@Id
 	@GeneratedValue
-	private long id;
-	
-	@Column(nullable = false)
+	private Long id;
+
 	private String Descricao;
 	
 	@ManyToOne

@@ -52,7 +52,7 @@ public class Facade {
 		return instance;
 	}
 
-	public IRepositoryProfessor getUsuario(){
+	public IRepositoryProfessor getProfessor(){
 		return this.IProfessor;
 	}
 
