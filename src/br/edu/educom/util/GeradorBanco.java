@@ -22,7 +22,9 @@ public class GeradorBanco {
 			
 			Usuario user  = new Usuario();
 			user.setEmail("joao.p.lira@gmail.com");
+			user.setNome("João Paulo");
 			user.setSenha("123@mudar");
+			
 			
 			Facade.getInstance().getUsuario().salvarUsuario(user);
 			

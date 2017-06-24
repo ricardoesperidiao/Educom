@@ -1,5 +1,7 @@
 package br.edu.com.dados.repositorys;
 
+
+
 import java.util.List;
 
 import br.edu.com.entities.Usuario;

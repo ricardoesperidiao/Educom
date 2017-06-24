@@ -20,7 +20,7 @@ public class CadastroUsuario implements ILogica{
 		Facade.getInstance().getUsuario().salvarUsuario(user);
 		
 		request.setAttribute("msg", "Usuario "+ user.getNome()+" cadastrado com sucesso!");
-		response.sendRedirect("home.jsp");
+		request.getRequestDispatcher("home.jsp").forward(request, response);
 		
 	}
 

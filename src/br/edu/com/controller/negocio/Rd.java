@@ -1,10 +1,12 @@
 package br.edu.com.controller.negocio;
 
-import java.util.ArrayList;
+
+
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 
 import br.edu.com.controller.Facade;
 import br.edu.com.controller.ILogica;
@@ -17,14 +19,15 @@ public class Rd implements ILogica{
 		
 		String acao = request.getParameter("acao");
 		
-		
-		
 		if(acao.equals("visualizarUsuarios")){
 			
-			 List<Usuario> listUsuarios = new ArrayList<Usuario>();
-			 listUsuarios = Facade.getInstance().getUsuario().listarUsuarios();	
+			 List<Usuario> listUsuarios = Facade.getInstance().getUsuario().listarUsuarios();
+			 
+//			 com.github.jlinqer.collections.List<Usuario> t = new com.github.jlinqer.collections.List<>();
+//			 t.addAll(listUsuarios);
+			 
 			 request.setAttribute("listaUsuarios", listUsuarios);
-			 response.sendRedirect("visualizarUsuarios.jsp");
+			 request.getRequestDispatcher("visualizarUsuarios.jsp").forward(request, response);
 		}
 		
 		
