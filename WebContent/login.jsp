@@ -5,41 +5,36 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="shortcut icon" href="img/6765educom.ico" type="image/x-icon" />
-<link rel="stylesheet" href="css/CadastroUsuario.css">
-<title>EDUCOM - Cadastro Usuário</title>
+<link href="css/Login.css" rel="stylesheet" />
+<title>EDUCOM - Login</title>
 </head>
 <body>
+		<h1 style="color: white;">${msg}</h1>
+		<h1 style="color: white;">${param.msg }</h1>
 
 	<div class="central">
-
-		<div class="cabecalho">
-			<h2 class="h2">Cadastro Usuário</h2>
+		<div class="img">
+			<img src="img/educom.png">
 		</div>
-		
+		<div class="cabecalho">
+			<h2 class="h2">Login</h2>
+		</div>
 		<form action="Educom" method="post" class="formularioRelat">
-		<input onkeyup="maiuscula(this)" type="hidden" name="logica" value="CadastroUsuario">
-					
+			<input type="hidden" name="logica" value="AutenticarUsuario">
+			<input type="hidden" name="acao" value="AutenticarUsuario">
+
 			<div class="campo1">
 				<p class="titulo">E-mail</p>
-				<input type="text" name="email" class="texto1">
+				<input type="email" name="email" class="texto1">
 			</div>
-
 			<div class="campo2">
-				<p class="titulo">Nome</p>
-				<input type="text" name="nome" class="texto">
-			</div>
-
-			<div class="campo3">
 				<p class="titulo">Senha</p>
 				<input type="password" name="senha" class="texto">
 			</div>
-
 			<div class="btncad">
-				<input type="submit" value="Cadastrar" class="btncadastrar">
+				<input type="submit" value="Entrar" class="btncadastrar">
 			</div>
-
 		</form>
 	</div>
-
 </body>
 </html>

@@ -4,8 +4,8 @@
 <html>
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<link rel="shortcut icon" href="6765educom.ico" type="image/x-icon"/>
-        <link rel="stylesheet" href="instituicao.css"/>
+		<link rel="shortcut icon" href="img/6765educom.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/instituicao.css"/>
         <title>EDUCOM - Cadastro Instituição</title>
 </head>
 <body>

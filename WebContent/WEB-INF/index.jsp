@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="shortcut icon" href="6765educom.ico" type="image/x-icon" />
-<link rel="stylesheet" href="home.css" />
+<link rel="shortcut icon" href="img/6765educom.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/home.css" />
 <title>EDUCOM - Home</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
 	</div>
 
 	<div>
-	TESTE = <h1>${msg}</h1>
+	<h1>${msg}</h1>
 	</div>
 
 	<div class="grafico"></div>

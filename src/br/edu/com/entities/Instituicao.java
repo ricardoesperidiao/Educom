@@ -23,7 +23,7 @@ public class Instituicao {
 	@ManyToOne
 	private Professor professor;
 	
-	@OneToMany(mappedBy="instituicao", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.EAGER)
+	@OneToMany(mappedBy="instituicao", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.LAZY)
 	private List<Turma> turma = new ArrayList<>();
 
 	public Long getId() {

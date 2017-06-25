@@ -3,7 +3,6 @@ package br.edu.com.dados.repositories;
 import java.util.List;
 
 import br.edu.com.dados.dao.Dao;
-import br.edu.com.entities.Professor;
 import br.edu.com.entities.UsuarioLogin;
 
 public class RepositoryUsuarioLogin implements IRepositoryUsuarioLogin {
