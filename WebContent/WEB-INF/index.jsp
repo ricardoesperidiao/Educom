@@ -13,8 +13,8 @@
 
 	<div class="barraMenu">
 
-		<a href="CadastroAtividade.html">
-			<input type="button" value="Cadastro Atividade" class="buttonAtividade">
+		<a href="Educom?logica=Rd&acao=cadastroDisciplina">
+			<input type="button" value="Cadastro Disciplina" class="buttonAtividade">
 		</a> 
 		<a href="Educom?logica=Rd&acao=cadastroInstituicao">
 			<input type="button" value="Instituição" class="buttonInstituicao">
@@ -35,6 +35,9 @@
 			<input type="button" value="Listar Instituição">
 		</a> 
 		<a href="Educom?logica=Rd&acao=listarInstituicaoTurma">
+			<input type="button" value="Listar Turma">
+		</a> 
+		<a href="Educom?logica=Rd&acao=listarDisciplina">
 			<input type="button" value="Listar Turma">
 		</a> 
 	<div>

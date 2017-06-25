@@ -98,8 +98,15 @@ public class Rd implements ILogica{
 			request.setAttribute("turma", turma);
 			request.setAttribute("listaInstituicao", listaInstituicao);
 			
-			request.getRequestDispatcher("/WEB-INF/EditarTurma.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/EditarTurma.jsp").forward(request, response);	
+		}
+		else if (acao.equals("cadastroDisciplina")){
+			List<Turma> turma = Facade
+					.getInstance()
+					.getITurma().listarTurma();
 			
+			request.setAttribute("listaTurma", turma);
+			request.getRequestDispatcher("/WEB-INF/CadastroDisciplina.jsp").forward(request, response);	
 		}
 		
 		
