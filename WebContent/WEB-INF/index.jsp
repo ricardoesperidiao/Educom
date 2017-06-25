@@ -13,22 +13,32 @@
 
 	<div class="barraMenu">
 
-		<a href="CadastroAtividade.html"><input type="button"
-			value="Cadastro Atividade" class="buttonAtividade"></a> <a
-			href="CadastroAtividade.html"><input type="button"
-			value="Instituição" class="buttonInstituicao"></a> <a
-			href="CadastroAluno.html"><input type="button"
-			value="Cadastro Aluno" class="buttonAluno"></a> <a
-			href="relatorios.html"><input type="button"
-			value="Cadastro Relatório" class="buttonRelatorio"></a> <a
-			href="CadastroTuma.html"><input type="button"
-			value="Cadastro Turma" class="buttonTurma"></a> <input
-			type="button" value="Relatórios Gerenciais" class="buttonRelatorios">
+		<a href="CadastroAtividade.html">
+			<input type="button" value="Cadastro Atividade" class="buttonAtividade">
+		</a> 
+		<a href="Educom?logica=Rd&acao=cadastroInstituicao">
+			<input type="button" value="Instituição" class="buttonInstituicao">
+		</a>
+		<a href="CadastroAluno.html">
+			<input type="button" value="Cadastro Aluno" class="buttonAluno">
+		</a> 
+		<a href="relatorios.html">
+			<input type="button" value="Cadastro Relatório" class="buttonRelatorio">
+		</a> 
+		<a href="Educom?logica=Rd&acao=cadastroTurma">
+			<input type="button" value="Cadastro Turma" class="buttonTurma">
+		</a> 
+			<input type="button" value="Relatórios Gerenciais" class="buttonRelatorios">
 
 	</div>
-
+		<a href="Educom?logica=Rd&acao=listarInstituicao">
+			<input type="button" value="Listar Instituição">
+		</a> 
+		<a href="Educom?logica=Rd&acao=listarInstituicaoTurma">
+			<input type="button" value="Listar Turma">
+		</a> 
 	<div>
-	<h1>${msg}</h1>
+		<h1>${msg}</h1>
 	</div>
 
 	<div class="grafico"></div>

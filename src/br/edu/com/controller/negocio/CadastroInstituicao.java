@@ -8,15 +8,18 @@ import org.apache.commons.beanutils.BeanUtils;
 import br.edu.com.controller.Facade;
 import br.edu.com.controller.ILogica;
 import br.edu.com.entities.Instituicao;
+import br.edu.com.entities.UsuarioLogin;
 
 public class CadastroInstituicao implements ILogica {
 
 	@Override
 	public void executa(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		// TODO Auto-generated method stub
-		
 		Instituicao instituicao = new Instituicao();
 		BeanUtils.populate(instituicao, request.getParameterMap());
+		
+		UsuarioLogin user = (UsuarioLogin) request.getSession().getAttribute("usuarioSessao");
+		
+		instituicao.setProfessor(user.getProfessor());
 		
 		try {
 			
@@ -24,11 +27,10 @@ public class CadastroInstituicao implements ILogica {
 			
 		} catch (Exception e) {
 			System.out.println("Erro ->" + e.getMessage());
-			// TODO: handle exception
 		}
 		
 		request.setAttribute("msg", "Instituicao" + instituicao.getNome() + "Cadastrada com sucesso!");
-		request.getRequestDispatcher("Home.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
 	}
 
 }

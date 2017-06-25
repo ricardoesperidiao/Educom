@@ -4,11 +4,13 @@ import javax.servlet.http.HttpServletRequest;
 
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.beanutils.BeanUtils;
 
 import br.edu.com.controller.Facade;
 import br.edu.com.controller.ILogica;
+import br.edu.com.entities.Professor;
 import br.edu.com.entities.UsuarioLogin;
 
 public class CadastroUsuario implements ILogica{
@@ -19,16 +21,15 @@ public class CadastroUsuario implements ILogica{
 		UsuarioLogin user = new UsuarioLogin();
 		
 		BeanUtils.populate(user, request.getParameterMap());
-		//user.setProfessor(new Professor());
+		Professor professor = new Professor(user);
 		try {
-			Facade.getInstance().getIUsuarioLogin().salvarUsuarioLogin(user);
-			
+			Facade.getInstance().getProfessor().salvarUsuario(professor);
 		} catch (Exception e) {
 			System.out.println("Erro -> "+ e.getMessage());
 		}
-		request.setAttribute("msg", "Usuario "+ user.getNome() + " cadastrado com sucesso!");
-		request.getRequestDispatcher("home.jsp").forward(request, response);
-		
+		HttpSession sessao = request.getSession(true);
+        sessao.setAttribute("usuarioSessao", user);
+    	request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);   
 	}
 
 }

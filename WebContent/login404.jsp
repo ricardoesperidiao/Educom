@@ -11,8 +11,7 @@
 <body>
 
 	<div class="cabecalho">
-		<h1>${msg }</h1>
-		<h1>${param.msg }</h1>
+		Pagina não encontrada
 	</div>
 	<div class="central">
 		<div class="img">

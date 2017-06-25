@@ -34,6 +34,9 @@
 			<div class="btncad">
 				<input type="submit" value="Entrar" class="btncadastrar">
 			</div>
+			<div>
+				<h2 class="h2">Novo por aqui? <a href="CadastroUsuario.jsp" style="color: white;">Inscreva-se agora.</a></h2>
+			</div>
 		</form>
 	</div>
 </body>

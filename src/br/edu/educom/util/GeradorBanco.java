@@ -24,8 +24,13 @@ public class GeradorBanco {
 			user.setEmail("ricardoesperidiao@gmail.com");
 			user.setSenha("123@mudar");
 			user.setNome("teste");
+			Professor professor = new Professor(user);
+			Facade.getInstance().getProfessor().salvarUsuario(professor);
 			
-			Facade.getInstance().getIUsuarioLogin().salvarUsuarioLogin(user);
+			UsuarioLogin teste;
+			teste = (UsuarioLogin)Facade.getInstance().getIUsuarioLogin().procurarUsuarioLogin("from UsuarioLogin where email = 'ricardoesperidiao@gmail.com'").get(0);
+
+			System.out.println("Usuario - Professor = " + teste.getProfessor());
 			
 //			Usuario user  = new Usuario();
 //			user.setEmail("joao.p.lira@gmail.com");

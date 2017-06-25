@@ -17,11 +17,12 @@
 		</div>
 		
 		<form action="Educom" method="post" class="formularioRelat">
-		<input onkeyup="maiuscula(this)" type="hidden" name="logica" value="CadastroUsuario">
+			<input type="hidden" name="acao" value="AutenticarUsuario">
+			<input type="hidden" name="logica" value="CadastroUsuario">
 					
 			<div class="campo1">
 				<p class="titulo">E-mail</p>
-				<input type="text" name="email" class="texto1">
+				<input type="email" name="email" class="texto1">
 			</div>
 
 			<div class="campo2">
