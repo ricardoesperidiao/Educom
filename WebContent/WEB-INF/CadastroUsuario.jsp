@@ -15,6 +15,7 @@
 		<div class="cabecalho">
 			<h2 class="h2">Cadastro Usuário</h2>
 		</div>
+		
 		<form action="Educom" method="post" class="formularioRelat">
 		<input onkeyup="maiuscula(this)" type="hidden" name="logica" value="CadastroUsuario">
 					

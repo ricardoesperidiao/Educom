@@ -19,7 +19,7 @@ public class Professor {
 	private Long id;
 	private String nome;
 	
-	 @OneToOne
+	@OneToOne
 	private UsuarioLogin usuarioLogin;
 	
 	@OneToMany(mappedBy="professor", cascade={CascadeType.ALL,CascadeType.REMOVE},fetch = FetchType.EAGER)

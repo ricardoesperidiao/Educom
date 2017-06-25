@@ -2,13 +2,13 @@ package br.edu.com.controller.negocio;
 
 import javax.servlet.http.HttpServletRequest;
 
+
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.beanutils.BeanUtils;
 
 import br.edu.com.controller.Facade;
 import br.edu.com.controller.ILogica;
-import br.edu.com.entities.Professor;
 import br.edu.com.entities.UsuarioLogin;
 
 public class CadastroUsuario implements ILogica{

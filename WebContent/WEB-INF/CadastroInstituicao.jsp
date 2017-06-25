@@ -12,25 +12,26 @@
 
  <div class="central">
         <div class="cabecalho"><h2 class="h2">Cadastro Instituição</h2></div>
-        <form class="formularioRelat">
+        
+        <form class="formularioRelat" action="Educom" method="post">
+        <input onkeyup="maiuscula(this)" type="hidden" name="logica" value="CadastroInstituicao">
             
             <div class="campo1">
                 <p class="titulo">Nome da Instituição</p>
-                <input type="text" class="texto">
+                <input type="text" name="nome" class="texto">
             </div>
             
             <div class="campo2">
                 <p class="titulo">Sigla Instituição</p>
-                <input type="text" class="texto">
+                <input type="text" name="sigla" class="texto">
             </div>
-                     
+           
             <div class="btncad">
                 <input type="submit" value="Cadastrar" class="btncadastrar">
             </div>
             
         </form>
     </div>
-    
-
+   
 </body>
 </html>
