@@ -73,8 +73,39 @@
                                     <li><a href="#">Listar Atividades</a></li>
                                 </ul>
                             </li>
+=======
+		<a href="Educom?logica=Rd&acao=cadastroDisciplina">
+			<input type="button" value="Cadastro Disciplina" class="buttonAtividade">
+		</a> 
+		<a href="Educom?logica=Rd&acao=cadastroInstituicao">
+			<input type="button" value="Instituição" class="buttonInstituicao">
+		</a>
+		<a href="CadastroAluno.html">
+			<input type="button" value="Cadastro Aluno" class="buttonAluno">
+		</a> 
+		<a href="relatorios.html">
+			<input type="button" value="Cadastro Relatório" class="buttonRelatorio">
+		</a> 
+		<a href="Educom?logica=Rd&acao=cadastroTurma">
+			<input type="button" value="Cadastro Turma" class="buttonTurma">
+		</a> 
+			<input type="button" value="Relatórios Gerenciais" class="buttonRelatorios">
 
-                            <li class=""><a href="#">Dashboard</a></li>
+<li class=""><a href="#">Dashboard</a></li>
+	</div>
+		<a href="Educom?logica=Rd&acao=listarInstituicao">
+			<input type="button" value="Listar Instituição">
+		</a> 
+		<a href="Educom?logica=Rd&acao=listarInstituicaoTurma">
+			<input type="button" value="Listar Turma">
+		</a> 
+		<a href="Educom?logica=Rd&acao=listarDisciplina">
+			<input type="button" value="Listar Turma">
+		</a> 
+	<div>
+		<h1>${msg}</h1>
+	</div>
+>>>>>>> refs/remotes/origin/master
 
                         </ul>
                         <ul class="nav navbar-nav pull-right">
