@@ -1,50 +1,73 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="shortcut icon" href="img/6765educom.ico" type="image/x-icon" />
-<link rel="stylesheet" href="css/CadastroAluno.css">
-<title>EDUCOM - Cadastro Aluno</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-<body>
+    <link href="css/bootstrap.css" rel="stylesheet">    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+  </head>
 
-	<div class="central">
-		<div class="cabecalho">
-			<h2 class="h2">Cadastro Aluno</h2>
-		</div>
-		<form class="formularioRelat">
+  <body class="back-edu">
 
-			<div class="campo1">
-				<p class="titulo">Nome do Aluno</p>
-				<input type="text" class="texto1">
-			</div>
+<a class="navbar-brand" rel="home" href="index.html">
+                        <img style="max-width:130px; margin-top: -10px;"
+                                src="img/educom.png">
+                        </a>
 
-			<div class="campo2">
-				<p class="titulo2">Instituição</p>
-				<select>
-					<option></option>
-				</select>
-			</div>
+ <form class="form-horizontal">
 
-			<div class="campo3">
-				<p class="titulo2">Turma</p>
-				<select>
-					<option></option>
-				</select>
-			</div>
+ <br/>
+<fieldset>
 
-			<div class="btncad">
-				<input type="submit" value="Cadastrar" class="btncadastrar">
-			</div>
-
-		</form>
-	</div>
+<legend><h1>Cadastrar Aluno</h1></legend>
 
 
+<h2>Preencha os campos abaixo: </h2>
+<div class="form-group">
+  <label class="col-md-2 control-label" for="textinput">Nome do Aluno</label>  
+  <div class="col-md-5">
+  <input id="textinput" name="textinput" type="text" class="form-control input-lg">
+    
+  </div>
+</div>
 
-</body>
+
+<div class="form-group">
+  <label class="col-md-2 control-label" for="selectturma">Turma</label>
+  <div class="col-md-2">
+    <select id="selectturma" name="selectturma" class="form-control input-lg">
+      <option value="1">fafica 1</option>
+      <option value="2">favip 2</option>
+    </select>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-2 control-label" for="selectinstituicao">Instituição</label>
+  <div class="col-md-2">
+    <select id="selectinstituicao" name="selectinstituicao" class="form-control input-lg">
+      <option value="1">fafica</option>
+      <option value="2">favip</option>
+    </select>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-2 control-label" for="btnaluno"></label>
+  <div class="col-md-4">
+    <button id="btnaluno" name="btnaluno" class="btn btn-success btn-lg">Cadastrar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

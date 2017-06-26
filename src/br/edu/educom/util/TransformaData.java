@@ -93,7 +93,7 @@ public class TransformaData {
 		
 	}
 	
-	// add dias aparte da tada de hoje
+	// add dias a partir da data de hoje
 	public static Date adicionarDia(Date date, int qtdDias) {
 		Calendar calendario = Calendar.getInstance();
 		calendario.setTime(date);

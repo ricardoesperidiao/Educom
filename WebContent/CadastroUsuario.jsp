@@ -1,46 +1,78 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="shortcut icon" href="img/6765educom.ico" type="image/x-icon" />
-<link rel="stylesheet" href="css/CadastroUsuario.css">
-<title>EDUCOM - Cadastro Usuário</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
 </head>
-<body>
 
-	<div class="central">
+<body class="back-edu">
 
-		<div class="cabecalho">
-			<h2 class="h2">Cadastro Usuário</h2>
-		</div>
-		
-		<form action="Educom" method="post" class="formularioRelat">
-			<input type="hidden" name="acao" value="AutenticarUsuario">
-			<input type="hidden" name="logica" value="CadastroUsuario">
-					
-			<div class="campo1">
-				<p class="titulo">E-mail</p>
-				<input type="email" name="email" class="texto1">
-			</div>
+    <br/>
 
-			<div class="campo2">
-				<p class="titulo">Nome</p>
-				<input type="text" name="nome" class="texto">
-			</div>
+    <br/><br/><br/><br/>
 
-			<div class="campo3">
-				<p class="titulo">Senha</p>
-				<input type="password" name="senha" class="texto">
-			</div>
+    <div class="container container-table">
+        <div class="row vertical-center-row">
 
-			<div class="btncad">
-				<input type="submit" value="Cadastrar" class="btncadastrar">
-			</div>
+            <div class="well">
+                <h1>Cadastro Inicial</h1>
+                <hr/>
 
-		</form>
-	</div>
+                <img style="max-width:180px;" src="img/educom.png" class="img-responsive img-center">
+                <br/><br/>
 
+                <div class="row">
+                    <div class="modal-body">
+                        <form class="form-horizontal" action="Educom" method="post">
+                            <input type="hidden" name="acao" value="AutenticarUsuario">
+			                <input type="hidden" name="logica" value="CadastroUsuario">
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="textinput">E-mail</label>
+                                <div class="col-md-4">
+                                    <input type="email" name="email" placeholder="ex: @gmail.com" class="form-control input-lg">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="textinput">Nome</label>
+                                <div class="col-md-4">
+                                    <input type="text" name="nome" type="email" class="form-control input-lg">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="passwordinput">Senha</label>
+                                <div class="col-md-4">
+                                   <input type="password" name="senha" class="form-control input-lg">
+                                </div>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="singlebutton"></label>
+                                <div class="col-md-4">
+                                    <input type="submit" value="Cadastrar" class="btn btn-success btn-lg">Confirmar</button>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
